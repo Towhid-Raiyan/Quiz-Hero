@@ -12,6 +12,12 @@ let submitContainer = document.querySelector("#submitContainer");
 let quizContainer = document.querySelector("#quizContainer");
 let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
+let blog = document.getElementById('btn-blog');
+
+// redirect to the blog page
+blog.addEventListener("click", () =>{
+  window.location.href = "blog.html";
+})
 
 // EventListener for quiz start button
 startQuiz.addEventListener("click", () => {
