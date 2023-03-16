@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,62 @@
     <title>Blogs</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <h1 class="text-5xl text-center my-5 font-semibold text-green-600">Welcome to Blog Page!!!</h1>
     <div class="grid grid-cols-1 gap-y-3 justify-items-center my-5">
         <div class="border w-3/4 p-4 bg-green-100 rounded p-4">
             <p class="font-semibold text-xl"> What is the difference between map(), filter(), forEach() and find() ?</p>
-            <p>In JavaScript map() returns a new array with updated elements from calling a function for every single array elements. It does not change original array and it doesn't execute for empty array.</p>
-            <p>The filter() method creates a new array for all the elements of the array which satisfy certain conditions.</p>
-            <p>The forEach() method calls a function and iterates over the elements of an array.The forEach() method is used we dont need anything in return.</p>
-            <p>The find() method executes a function for each array element and returns only the value of the first element that satisfy certain conditions. The find() method returns undefined if no elements are found.</p>
+            <p>In JavaScript map() returns a new array with updated elements from calling a function for every single
+                array elements. It does not change original array and it doesn't execute for empty array.</p>
+            <p>The filter() method creates a new array for all the elements of the array which satisfy certain
+                conditions.</p>
+            <p>The forEach() method calls a function and iterates over the elements of an array.The forEach() method is
+                used we dont need anything in return.</p>
+            <p>The find() method executes a function for each array element and returns only the value of the first
+                element that satisfy certain conditions. The find() method returns undefined if no elements are found.
+            </p>
         </div>
         <div class="border w-3/4 p-4 bg-green-100 rounded p-4">
-            <p class="font-semibold text-xl"> What is the difference between local storage, session storge and cookies in javascript?</p>
-            <p>Local storage is used to store data that persist even after the browser is closed. Its only can accessed by client. Data stored in local storage is not sent to the server.</p>
-            <p>Session storage is used to store data but these data does not persist after the browser is close. So when session is finish, data will be deleted. As like local storage its only can accessed by client and stored data is not sent to the server.</p>
-            <p>Cookies are small text files stored in the user's browser.These are used to store data that needs to be sent to the server with each HTTP request. Cookies can be accessed by both server and clients.</p>
+            <p class="font-semibold text-xl"> What is the difference between local storage, session storge and cookies
+                in javascript?</p>
+            <p>Local storage is used to store data that persist even after the browser is closed. Its only can accessed
+                by client. Data stored in local storage is not sent to the server.</p>
+            <p>Session storage is used to store data but these data does not persist after the browser is close. So when
+                session is finish, data will be deleted. As like local storage its only can accessed by client and
+                stored data is not sent to the server.</p>
+            <p>Cookies are small text files stored in the user's browser.These are used to store data that needs to be
+                sent to the server with each HTTP request. Cookies can be accessed by both server and clients.</p>
         </div>
         <div class="border w-3/4 p-4 bg-green-100 rounded p-4">
             <p class="font-semibold text-xl"> What is EventLoop and how it works?</p>
-            <p>In javascript, the Event Loop is a mechanism that allows for efficient and responsive handling of events in a single-threaded environment by managing the order of execution of code in response to events and callbacks.How the Event Loop works given below:</p>
-            <p>An event handler function is added to a queue when an event is triggered. New event handler functions are continuously checked for by the event loop. If a function is discovered, it is run. The loop waits for new events if there are no functions in the queue. New events or callbacks may be generated when an event handler code is called. After the current function has finished running, these new callbacks are added to a queue and will be performed in the order they were added. As long as there are events or callbacks in the queue, the event loop keeps going. The loop ends when the queue is empty and doesn't restart until new events are triggered.</p>
+            <p>In javascript, the Event Loop is a mechanism that allows for efficient and responsive handling of events
+                in a single-threaded environment by managing the order of execution of code in response to events and
+                callbacks.How the Event Loop works given below:</p>
+            <p>An event handler function is added to a queue when an event is triggered. New event handler functions are
+                continuously checked for by the event loop. If a function is discovered, it is run. The loop waits for
+                new events if there are no functions in the queue. New events or callbacks may be generated when an
+                event handler code is called. After the current function has finished running, these new callbacks are
+                added to a queue and will be performed in the order they were added. As long as there are events or
+                callbacks in the queue, the event loop keeps going. The loop ends when the queue is empty and doesn't
+                restart until new events are triggered.</p>
         </div>
         <div class="border w-3/4 p-4 bg-green-100 rounded p-4">
             <p class="font-semibold text-xl"> What is the works of quizTimer() function?</p>
-            <p>The quizTimer() function taking a parameter called dismiss. If dismiss parameter is true, the timer stop counting. If dismiss parameter is false it continue countdown the timer and update the time in every second and displaying it. If time excedded 60 seconds it change color to red. The opacity of red color change in every second.</p>
+            <p>The quizTimer() function taking a parameter called dismiss. If dismiss parameter is true, the timer stop
+                counting. If dismiss parameter is false it continue countdown the timer and update the time in every
+                second and displaying it. If time excedded 60 seconds it change color to red. The opacity of red color
+                change in every second.</p>
         </div>
-        
+        <div class="border w-3/4 p-4 bg-green-100 rounded p-4">
+            <p class="font-semibold text-xl"> What is the works of chooseQuiz() function?</p>
+            <p>The chooseQuiz() function taking two parameter called index and givenAns. Its taking parameter of
+                selected option and the index number of that array. It checks firstly that the given answer is available
+                or not in array. If the answer exist then make a varriable name serial with initial value 0.
+                Then it start a for of loop for quiz of answers. Then if the id of existing quiz is match with the quiz
+                id it insert index of quizData and givenAns at index serial. Then it break and increase the serial value
+                by 1. If data is not found it push the index of quizData and givenAns to answers array. Finally, it calls displayAnswers and passes the answers array as parameter. </p>
+        </div>
     </div>
 </body>
 </html>
