@@ -28,6 +28,11 @@
             <p>In javascript, the Event Loop is a mechanism that allows for efficient and responsive handling of events in a single-threaded environment by managing the order of execution of code in response to events and callbacks.How the Event Loop works given below:</p>
             <p>An event handler function is added to a queue when an event is triggered. New event handler functions are continuously checked for by the event loop. If a function is discovered, it is run. The loop waits for new events if there are no functions in the queue. New events or callbacks may be generated when an event handler code is called. After the current function has finished running, these new callbacks are added to a queue and will be performed in the order they were added. As long as there are events or callbacks in the queue, the event loop keeps going. The loop ends when the queue is empty and doesn't restart until new events are triggered.</p>
         </div>
+        <div class="border w-3/4 p-4 bg-green-100 rounded p-4">
+            <p class="font-semibold text-xl"> What is the works of quizTimer() function?</p>
+            <p>The quizTimer() function taking a parameter called dismiss. If dismiss parameter is true, the timer stop counting. If dismiss parameter is false it continue countdown the timer and update the time in every second and displaying it. If time excedded 60 seconds it change color to red. The opacity of red color change in every second.</p>
+        </div>
+        
     </div>
 </body>
 </html>
