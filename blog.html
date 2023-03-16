@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1 class="text-5xl text-center my-5 font-semibold text-green-600">Welcome to Blog Page!!!</h1>
-    <div class="grid grid-cols-1 gap-y-3 justify-items-center">
+    <div class="grid grid-cols-1 gap-y-3 justify-items-center my-5">
         <div class="border w-3/4 p-4 bg-green-100 rounded p-4">
             <p class="font-semibold text-xl"> What is the difference between map(), filter(), forEach() and find() ?</p>
             <p>In JavaScript map() returns a new array with updated elements from calling a function for every single array elements. It does not change original array and it doesn't execute for empty array.</p>
@@ -22,6 +22,11 @@
             <p>Local storage is used to store data that persist even after the browser is closed. Its only can accessed by client. Data stored in local storage is not sent to the server.</p>
             <p>Session storage is used to store data but these data does not persist after the browser is close. So when session is finish, data will be deleted. As like local storage its only can accessed by client and stored data is not sent to the server.</p>
             <p>Cookies are small text files stored in the user's browser.These are used to store data that needs to be sent to the server with each HTTP request. Cookies can be accessed by both server and clients.</p>
+        </div>
+        <div class="border w-3/4 p-4 bg-green-100 rounded p-4">
+            <p class="font-semibold text-xl"> What is EventLoop and how it works?</p>
+            <p>In javascript, the Event Loop is a mechanism that allows for efficient and responsive handling of events in a single-threaded environment by managing the order of execution of code in response to events and callbacks.How the Event Loop works given below:</p>
+            <p>An event handler function is added to a queue when an event is triggered. New event handler functions are continuously checked for by the event loop. If a function is discovered, it is run. The loop waits for new events if there are no functions in the queue. New events or callbacks may be generated when an event handler code is called. After the current function has finished running, these new callbacks are added to a queue and will be performed in the order they were added. As long as there are events or callbacks in the queue, the event loop keeps going. The loop ends when the queue is empty and doesn't restart until new events are triggered.</p>
         </div>
     </div>
 </body>
